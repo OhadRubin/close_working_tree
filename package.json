@@ -1,0 +1,31 @@
+{
+  "name": "close-all-diff-editors-menu",
+  "displayName": "Close All Diff Editors (Tab Menu)",
+  "description": "Adds 'Close All Diff Editors' to the editor tab context menu",
+  "version": "0.0.1",
+  "publisher": "ohadr",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "git.closeAllDiffEditors",
+        "title": "Close All Diff Editors"
+      }
+    ],
+    "menus": {
+      "editor/title/context": [
+        {
+          "command": "git.closeAllDiffEditors",
+          "when": "!operationInProgress",
+          "group": "1_close"
+        }
+      ]
+    }
+  }
+}
