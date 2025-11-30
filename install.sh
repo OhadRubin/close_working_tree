@@ -3,7 +3,7 @@ set -e
 
 REPO="OhadRubin/close_working_tree"
 VSIX="close-all-diff-editors-menu-0.0.1.vsix"
-URL="https://github.com/${REPO}/raw/main/${VSIX}"
+URL="https://github.com/${REPO}/raw/master/${VSIX}"
 TMP="/tmp/${VSIX}"
 
 echo "Downloading ${VSIX}..."
